@@ -1,0 +1,42 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+
+    <h1 class="page-title">Following</h1>
+
+    {% for post in posts %}
+        <div class="card">
+            <div class="card-body">
+                <a class="post-owner" href="{% url 'profile' post.owner.username %}">{{ post.owner }}</a>
+                <p class="post-content">{{ post.content }}</p>
+                <p class="post-date">{{ post.date }}</p>
+                <div class="like-container">
+                    {% if post.owner != request.user %}
+                    {% if post.id in likes %}
+                        <i class="fa fa-heart" id="{{ post.id }}" style="font-size:25px;color:red;" onclick="like_unlike({{ post.id }})"></i>
+                    {% else %}
+                        <i class="fa fa-heart" id="{{ post.id }}" style="font-size:25px;color:black;" onclick="like_unlike({{ post.id }})"></i>
+                    {% endif %}
+                    {% else %}
+                    <i style="font-size:24px" class="fa">&#xf087;: </i>
+                    {% endif %}
+                    <p id="post_likes_{{ post.id }}">{{ post.likes }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    <div class="d-flex justify-content-center my-4">
+        <nav aria-label="Page navigation example ">
+            <ul class="pagination">
+                {% if posts.has_previous %}
+                    <li class="page-item"><a class="page-link" href="?page={{ posts.previous_page_number }}">Previous</a></li>
+                {% endif %}
+                {% if posts.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{ posts.next_page_number }}">Next</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+
+{% endblock %}

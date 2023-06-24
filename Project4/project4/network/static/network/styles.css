@@ -1,0 +1,63 @@
+.card {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#new-post-content , .form-control {
+    resize: none;
+}
+
+.page-title {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 40px;
+}
+
+.page-subtitle {
+    font-size: 28px;
+}
+
+#new-post-btn {
+    margin-top: 5px;
+}
+
+.post-owner {
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+    color:black;
+}
+.post-owner:hover {
+    color:black;
+}
+
+.post-content {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.post-date {
+    color: rgb(163, 163, 163);
+}
+
+.profile-followers {
+    margin-left: 10px;
+    margin-right: 35%;
+}
+
+#follow-btn {
+    margin-top: 25px;
+}
+
+.like-container {
+    display: flex;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.fa:hover {
+    cursor: pointer;
+}

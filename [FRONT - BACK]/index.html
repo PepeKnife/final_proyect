@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sara Portfolio</title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="left">
+                <h1>IM SARA</h1>
+                <div class="bar"></div>
+                <p class="shadow-txt">I am an artist</p>
+            </div>
+            <div class="right"></div>
+        </div>
+    </section>
+
+    <section id="nav">
+        <div class="container">
+            <ul>
+                <li id="about-me-btn">
+                    <h3>about me</h3>
+                    <div class="indicator" id="abt-indi">
+                        <div class="indi-1" id="abt-indi-1"></div>
+                        <div class="indi-2" id="abt-indi-2"></div>
+                    </div>
+                </li>
+                <li id="paints-btn">
+                    <h3>paints</h3>
+                    <div class="indicator">
+                        <div class="indi-1" id="paint-indi-1"></div>
+                        <div class="indi-2" id="paint-indi-2"></div>
+                    </div>
+                </li>
+                <li id="writings-btn">
+                    <h3>writings</h3>
+                    <div class="indicator">
+                        <div class="indi-1" id="writings-indi-1"></div>
+                        <div class="indi-2" id="writings-indi-2"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <main id="about-me-section">
+        <section id="quotes">
+            <div class="display-quotes">
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="content">
+                            <h4>“La vida se basa en improvisar”</h4>
+                            <p class="shadow-txt">~SRM</p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="content">
+                            <h4>“Amo a mi novio”</h4>
+                            <p class="shadow-txt">~SRM</p>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="content">
+                            <h4>“Mi novio me ama”</h4>
+                            <p class="shadow-txt">~SRM</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+
+        <section id="about-me" class="container">
+            <div class="mobile-version">
+                <div class="container">
+                    <div class="top">
+                        <div class="left">
+                            <h2>about me</h2>
+                            <div class="bars">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div>
+                            <p>
+                                Soy la morenita mas sexy, linda, tierna y dulce que vas a poder conocer en tu vida. me
+                                gusta el baile, la pintura, la música y mi novio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desk-version">
+                <div class="container">
+                    <div class="left">
+                        <h2>about me</h2>
+                        <div class="bars">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <div>
+                            <p>
+                                Soy la morenita mas sexy, linda, tierna y dulce que vas a poder conocer en tu vida. me
+                                gusta el baile, la pintura, la música y mi novio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <main id="paintings">
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="paint img" id="pt1"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt2"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt3"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt4"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt5"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt6"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt7"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt8"></div>
+                </li>
+                <li>
+                    <div class="paint img" id="pt9"></div>
+                </li>
+                <li>
+                    <div class="paint " id="pt10"></div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <main id="writings">
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="writing" id="wr1">
+                        <p>Hola soy sarita la linda </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="writing" id="wr2">
+                        <p>Me llaman sarampion</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="writing" id="wr3">
+                        <p>Me gusta mi novio</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="writing" id="wr4">
+                        <p>Que lindo que es el baile</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="writing" id="wr5">
+                        <p>Que rico ver peliculas de terror en un clima frio</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="writing" id="wr6">
+                        <p>Que lindo que es el cielo por dios</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+
+    -
+    <footer>
+        <p class="shadow-txt">Encuentrame!</p>
+        <div class="social-links">
+            <ul>
+                <li><a href="https://www.instagram.com/sararm.17/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@sararodriguezmoreno2951"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li><a href="https://www.tiktok.com/@sararm.17?_t=8dMVud3lwW6&_r=1"><i class="fa-brands fa-tiktok"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./JS/app.js" type="module"></script>
+    <script src="./JS/carousel.js"></script>
+
+</body>
+
+</html>
